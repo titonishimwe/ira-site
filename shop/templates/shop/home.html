@@ -1,0 +1,40 @@
+{% extends "shop/base.html" %}
+
+{% block title %}{{ site.store_name }} Stationery &amp; Fashion{% endblock %}
+
+{% block content %}
+<header class="hero">
+  <div class="container">
+    <h1 class="hero-title"><span class="brand-word brand-word-xl">{{ site.store_name }}</span></h1>
+    <p class="hero-sub">Stationery &amp; Fashion</p>
+    <a class="btn btn-wa btn-lg js-chat" href="#"><i class="bi bi-whatsapp"></i> Order on WhatsApp</a>
+  </div>
+</header>
+
+<main class="container pb-5">
+  <div class="row g-3 g-md-4 tiles">
+    <div class="col-md-6">
+      <a class="tile tile-stationery" href="{% url 'stationery' %}">
+        <i class="bi bi-journal-bookmark-fill tile-icon"></i>
+        <span class="tile-title">Stationery</span>
+        <span class="tile-sub">School &amp; office</span>
+        <span class="tile-go">Shop <i class="bi bi-arrow-right"></i></span>
+      </a>
+    </div>
+    <div class="col-md-6">
+      <a class="tile tile-fashion" href="{% url 'fashion' %}">
+        <i class="bi bi-handbag-fill tile-icon"></i>
+        <span class="tile-title">Fashion</span>
+        <span class="tile-sub">Clothes &amp; shoes</span>
+        <span class="tile-go">Shop <i class="bi bi-arrow-right"></i></span>
+      </a>
+    </div>
+  </div>
+
+  <ul class="perks list-unstyled">
+    <li><i class="bi bi-bag-check-fill"></i> Wide range</li>
+    <li><i class="bi bi-patch-check-fill"></i> Quality</li>
+    <li><i class="bi bi-truck"></i> Fast delivery</li>
+  </ul>
+</main>
+{% endblock %}

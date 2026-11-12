@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ira Stationery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body class="page-stationery">
+
+<nav class="navbar navbar-expand-md site-nav sticky-top">
+  <div class="container">
+    <a class="brand" href="index.html" aria-label="Ira home"><span class="brand-word">Ira</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Menu">
+      <i class="bi bi-list fs-2"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-md-4 me-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="stationery.html">Stationery</a></li>
+        <li class="nav-item"><a class="nav-link" href="fashion.html">Fashion</a></li>
+      </ul>
+      <a class="btn btn-wa js-chat" href="#"><i class="bi bi-whatsapp"></i> Chat on WhatsApp</a>
+    </div>
+  </div>
+</nav>
+
+<header class="shop-head">
+  <div class="container">
+    <h1>Stationery</h1>
+  </div>
+</header>
+
+<main class="container shop-tools-wrap">
+  <div class="shop-tools">
+    <div class="chips" role="group" aria-label="Categories"><button type="button" class="chip active" data-filter="all">All</button><button type="button" class="chip" data-filter="School">School</button><button type="button" class="chip" data-filter="Office">Office</button><button type="button" class="chip" data-filter="Printing">Printing</button></div>
+    <div class="search">
+      <i class="bi bi-search"></i>
+      <input id="search" type="search" class="form-control" placeholder="Search" aria-label="Search products">
+    </div>
+  </div>
+
+  <section aria-label="Stationery products">
+    <div class="row g-3 g-md-4" id="grid">
+        <div class="col-6 col-md-4 col-lg-3 product-col" data-category="School" data-name="a4 exercise book, 96 pages">
+          <article class="product">
+            <div class="product-img"><img src="images/placeholder.svg" alt="A4 Exercise Book, 96 pages" loading="lazy"></div>
+            <div class="product-body">
+              <h3 class="product-name">A4 Exercise Book, 96 pages</h3>
+              <p class="product-price">1,000 RWF</p>
+              
+              <button type="button" class="btn btn-order js-order" data-name="A4 Exercise Book, 96 pages" data-price="1,000 RWF"><i class="bi bi-whatsapp"></i> Order</button>
+            </div>
+          </article>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 product-col" data-category="School" data-name="school backpack">
+          <article class="product">
+            <div class="product-img"><img src="images/placeholder.svg" alt="School Backpack" loading="lazy"></div>
+            <div class="product-body">
+              <h3 class="product-name">School Backpack</h3>
+              <p class="product-price">18,000 RWF</p>
+              
+              <button type="button" class="btn btn-order js-order" data-name="School Backpack" data-price="18,000 RWF"><i class="bi bi-whatsapp"></i> Order</button>
+            </div>
+          </article>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 product-col" data-category="School" data-name="geometry set">
+          <article class="product">
+            <div class="product-img"><img src="images/placeholder.svg" alt="Geometry Set" loading="lazy"></div>
+            <div class="product-body">
+              <h3 class="product-name">Geometry Set</h3>
+              <p class="product-price">2,500 RWF</p>
+              
+              <button type="button" class="btn btn-order js-order" data-name="Geometry Set" data-price="2,500 RWF"><i class="bi bi-whatsapp"></i> Order</button>
+            </div>
+          </article>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 product-col" data-category="School" data-name="ballpoint pens, box of 50">
+          <article class="product">
+            <div class="product-img"><img src="images/placeholder.svg" alt="Ballpoint Pens, box of 50" loading="lazy"></div>
+            <div class="product-body">
+              <h3 class="product-name">Ballpoint Pens, box of 50</h3>
+              <p class="product-price">5,000 RWF</p>
+              
+              <button type="button" class="btn btn-order js-order" data-name="Ballpoint Pens, box of 50" data-price="5,000 RWF"><i class="bi bi-whatsapp"></i> Order</button>
+            </div>
+          </article>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 product-col" data-category="School" data-name="colour pencils, 24 pack">
+          <article class="product">
+            <div class="product-img"><img src="images/placeholder.svg" alt="Colour Pencils, 24 pack" loading="lazy"></div>
+            <div class="product-body">
+              <h3 class="product-name">Colour Pencils, 24 pack</h3>
+              <p class="product-price">3,000 RWF</p>
+              
+              <button type="button" class="btn btn-order js-order" data-name="Colour Pencils, 24 pack" data-price="3,000 RWF"><i class="bi bi-whatsapp"></i> Order</button>
+            </div>
+          </article>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 product-col" data-category="School" data-name="scientific calculator">
+          <article class="product">
+            <div class="product-img"><img src="images/placeholder.svg" alt="Scientific Calculator" loading="lazy"></div>
+            <div class="product-body">
+              <h3 class="product-name">Scientific Calculator</h3>
+              <p class="product-price">12,000 RWF</p>
+              
+              <button type="button" class="btn btn-order js-order" data-name="Scientific Calculator" data-price="12,000 RWF"><i class="bi bi-whatsapp"></i> Order</button>
+            </div>
+          </article>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 product-col" data-category="Office" data-name="a4 copy paper, 500 sheets">
+          <article class="product">
+            <div class="product-img"><img src="images/placeholder.svg" alt="A4 Copy Paper, 500 sheets" loading="lazy"></div>
+            <div class="product-body">
+              <h3 class="product-name">A4 Copy Paper, 500 sheets</h3>
+              <p class="product-price">7,500 RWF</p>
+              
+              <button type="button" class="btn btn-order js-order" data-name="A4 Copy Paper, 500 sheets" data-price="7,500 RWF"><i class="bi bi-whatsapp"></i> Order</button>
+            </div>
+          </article>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 product-col" data-category="Office" data-name="ring binder file">
+          <article class="product">
+            <div class="product-img"><img src="images/placeholder.svg" alt="Ring Binder File" loading="lazy"></div>
+            <div class="product-body">
+              <h3 class="product-name">Ring Binder File</h3>
+              <p class="product-price">2,000 RWF</p>
+              
+              <button type="button" class="btn btn-order js-order" data-name="Ring Binder File" data-price="2,000 RWF"><i class="bi bi-whatsapp"></i> Order</button>
+            </div>
+          </article>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 product-col" data-category="Office" data-name="stapler with staples">
+          <article class="product">
+            <div class="product-img"><img src="images/placeholder.svg" alt="Stapler with Staples" loading="lazy"></div>
+            <div class="product-body">
+              <h3 class="product-name">Stapler with Staples</h3>
+              <p class="product-price">3,500 RWF</p>
+              
+              <button type="button" class="btn btn-order js-order" data-name="Stapler with Staples" data-price="3,500 RWF"><i class="bi bi-whatsapp"></i> Order</button>
+            </div>
+          </article>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 product-col" data-category="Office" data-name="highlighters, set of 6">
+          <article class="product">
+            <div class="product-img"><img src="images/placeholder.svg" alt="Highlighters, set of 6" loading="lazy"></div>
+            <div class="product-body">
+              <h3 class="product-name">Highlighters, set of 6</h3>
+              <p class="product-price">2,800 RWF</p>
+              
+              <button type="button" class="btn btn-order js-order" data-name="Highlighters, set of 6" data-price="2,800 RWF"><i class="bi bi-whatsapp"></i> Order</button>
+            </div>
+          </article>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 product-col" data-category="Printing" data-name="epson ink bottle, 70 ml">
+          <article class="product">
+            <div class="product-img"><img src="images/placeholder.svg" alt="Epson Ink Bottle, 70 ml" loading="lazy"></div>
+            <div class="product-body">
+              <h3 class="product-name">Epson Ink Bottle, 70 ml</h3>
+              <p class="product-price">9,000 RWF</p>
+              
+              <button type="button" class="btn btn-order js-order" data-name="Epson Ink Bottle, 70 ml" data-price="9,000 RWF"><i class="bi bi-whatsapp"></i> Order</button>
+            </div>
+          </article>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 product-col" data-category="Printing" data-name="photo paper a4, 20 sheets">
+          <article class="product">
+            <div class="product-img"><img src="images/placeholder.svg" alt="Photo Paper A4, 20 sheets" loading="lazy"></div>
+            <div class="product-body">
+              <h3 class="product-name">Photo Paper A4, 20 sheets</h3>
+              <p class="product-price">6,000 RWF</p>
+              
+              <button type="button" class="btn btn-order js-order" data-name="Photo Paper A4, 20 sheets" data-price="6,000 RWF"><i class="bi bi-whatsapp"></i> Order</button>
+            </div>
+          </article>
+        </div>
+    </div>
+    <p id="empty" class="empty d-none">No products found.</p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
+    <span class="brand-word brand-word-sm">Ira</span>
+    <a class="footer-phone js-chat" href="#"><i class="bi bi-telephone-fill"></i> 0734 244 904</a>
+  </div>
+</footer>
+
+<a class="wa-fab js-chat" href="#" aria-label="Chat on WhatsApp"><i class="bi bi-whatsapp"></i></a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

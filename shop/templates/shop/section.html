@@ -1,0 +1,43 @@
+{% extends "shop/base.html" %}
+{% load static humanize %}
+
+{% block title %}{{ site.store_name }} {{ section_label }}{% endblock %}
+
+{% block content %}
+<header class="shop-head">
+  <div class="container">
+    <h1>{{ section_label }}</h1>
+  </div>
+</header>
+
+<main class="container shop-tools-wrap">
+  <div class="shop-tools">
+    <div class="chips" role="group" aria-label="Categories"><button type="button" class="chip active" data-filter="all">All</button>{% for category in categories %}<button type="button" class="chip" data-filter="{{ category.name }}">{{ category.name }}</button>{% endfor %}</div>
+    <div class="search">
+      <i class="bi bi-search"></i>
+      <input id="search" type="search" class="form-control" placeholder="Search" aria-label="Search products">
+    </div>
+  </div>
+
+  <section aria-label="{{ section_label }} products">
+    <div class="row g-3 g-md-4" id="grid">
+      {% for product in products %}
+        <div class="col-6 col-md-4 col-lg-3 product-col" data-category="{{ product.category.name }}" data-name="{{ product.name|lower }}">
+          <article class="product">
+            <div class="product-img"><img src="{% if product.image %}{{ product.image.url }}{% else %}{% static 'images/placeholder.svg' %}{% endif %}" alt="{{ product.name }}" loading="lazy"></div>
+            <div class="product-body">
+              <h3 class="product-name">{{ product.name }}</h3>
+              <p class="product-price">{{ product.price|intcomma }} RWF</p>
+              {% if product.size_list %}
+              <select class="form-select form-select-sm size-select" aria-label="Size for {{ product.name }}"><option value="" selected disabled>Size</option>{% for size in product.size_list %}<option>{{ size }}</option>{% endfor %}</select>
+              {% endif %}
+              <button type="button" class="btn btn-order js-order" data-id="{{ product.pk }}" data-name="{{ product.name }}" data-price="{{ product.price|intcomma }} RWF"><i class="bi bi-whatsapp"></i> Order</button>
+            </div>
+          </article>
+        </div>
+      {% endfor %}
+    </div>
+    <p id="empty" class="empty{% if products %} d-none{% endif %}">No products found.</p>
+  </section>
+</main>
+{% endblock %}
